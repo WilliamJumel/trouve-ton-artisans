@@ -1,0 +1,55 @@
+.how-it-works {
+  background-color: #f1f8fc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.how-it-works ol {
+  padding-left: 20px;
+}
+
+.list-link {
+  color: #0074c7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.list-link:hover {
+  text-decoration: underline;
+}
+
+.top-artisans {
+  margin-top: 30px;
+}
+
+.artisan-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.artisan-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: #384050;
+}
+
+.artisan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}

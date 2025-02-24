@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Artisan from "./artisan"; // Attention : sans majuscule
+import Liste from "./Liste";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header onSearch={setSearchQuery} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/liste" element={<Liste searchQuery={searchQuery} />} />
+        <Route path="/artisan/:id" element={<Artisan />} />
+        <Route path="/mentions-legales" element={<div>Mentions légales</div>} />
+        <Route path="/donnees-personnelles" element={<div>Données personnelles</div>} />
+        <Route path="/accessibilite" element={<div>Accessibilité</div>} />
+        <Route path="/cookies" element={<div>Cookies</div>} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

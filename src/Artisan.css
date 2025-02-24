@@ -1,0 +1,61 @@
+.artisan-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f8fc; /* Couleur de fond principale */
+  }
+  
+  h2 {
+    color: #0074c7; /* Bleu principal */
+  }
+  
+  .stars {
+    font-size: 20px;
+    color: #FFD700; /* Jaune pour les étoiles */
+  }
+  
+  .about {
+    background: white;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #cd2c2e; /* Rouge accent */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #82b864; /* Vert accent */
+  }
+  
