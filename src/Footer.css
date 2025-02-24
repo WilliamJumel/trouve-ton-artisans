@@ -1,0 +1,29 @@
+.footer {
+    background-color: #384050; /* Gris foncé */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #f1f8fc; /* Fond principal */
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  
