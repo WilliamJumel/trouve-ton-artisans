@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import "./Artisan.css";
 
 const artisans = [
-  { id: 1, name: "Jean Dupont", rating: 4.5, specialty: "Plombier", location: "Rouen", about: "Jean Dupont est un artisan expérimenté.", website: "https://www.exemple.com", email: "jean.dupont@example.com" },
-  { id: 2, name: "Marie Lefevre", rating: 5, specialty: "Électricien", location: "Caen", about: "Marie Lefevre est une électricienne certifiée.", website: "https://www.exemple.com", email: "marie.lefevre@example.com" },
+  { id: 1, name: "Jean Dupont", rating: 4.5, specialty: "Plombier", location: "Rouen", about: "Jean Dupont est un artisan expérimenté.", website: "https://www.artisan-fictif.com", email: "jean.dupont@example.com" },
+  { id: 2, name: "Marie Lefevre", rating: 5, specialty: "Électricien", location: "Caen", about: "Marie Lefevre est une électricienne certifiée.", website: "https://www.artisan-fictif.com", email: "marie.lefevre@example.com" },
   { id: 3, name: "Paul Durand", rating: 4, specialty: "Menuisier", location: "Le Havre", about: "Paul Durand réalise des meubles sur mesure.", website: "", email: "paul.durand@example.com" },
 ];
 

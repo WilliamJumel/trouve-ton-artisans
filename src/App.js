@@ -5,6 +5,7 @@ import Artisan from "./artisan"; // Attention : sans majuscule
 import Liste from "./Liste";
 import Header from "./Header";
 import Footer from "./Footer";
+import NotFound from "./NotFound"; // Vérifie bien le chemin du fichier
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -20,6 +21,9 @@ function App() {
         <Route path="/donnees-personnelles" element={<div>Données personnelles</div>} />
         <Route path="/accessibilite" element={<div>Accessibilité</div>} />
         <Route path="/cookies" element={<div>Cookies</div>} />
+
+        {/* Capture toutes les routes non définies et affiche la page 404 */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
@@ -27,3 +31,4 @@ function App() {
 }
 
 export default App;
+
