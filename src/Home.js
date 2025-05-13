@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap ici
+import "bootstrap/dist/css/bootstrap.min.css"; 
 import "./Home.css";
 
 const artisans = [
-  { id: 1, name: "Jean Dupont", rating: 4.5, specialty: "Plombier", location: "Rouen" },
-  { id: 2, name: "Marie Lefevre", rating: 5, specialty: "Électricien", location: "Caen" },
-  { id: 3, name: "Paul Durand", rating: 4, specialty: "Menuisier", location: "Le Havre" },
+  { id: 1, name: "Vallis Bellemare", rating: 4.5, specialty: "Plombier", location: "Vienne" },
+  { id: 2, name: "Amitee Lécuyer", rating: 5, specialty: "Couturier", location: "Annecy" },
+  { id: 3, name: "Leala Dennis", rating: 4, specialty: "Coiffeur", location: " Chambery" },
 ];
 
 const Home = () => {

@@ -3,9 +3,23 @@ import { useParams } from "react-router-dom";
 import "./Artisan.css";
 
 const artisans = [
-  { id: 1, name: "Jean Dupont", rating: 4.5, specialty: "Plombier", location: "Rouen", about: "Jean Dupont est un artisan expérimenté.", website: "https://www.artisan-fictif.com", email: "jean.dupont@example.com" },
-  { id: 2, name: "Marie Lefevre", rating: 5, specialty: "Électricien", location: "Caen", about: "Marie Lefevre est une électricienne certifiée.", website: "https://www.artisan-fictif.com", email: "marie.lefevre@example.com" },
-  { id: 3, name: "Paul Durand", rating: 4, specialty: "Menuisier", location: "Le Havre", about: "Paul Durand réalise des meubles sur mesure.", website: "", email: "paul.durand@example.com" },
+  { id: 1, name: "Vallis Bellemare", rating: 4, specialty: "Plombier", location: "Vienne", about: "Lorem ipsum dolor sit amet...", website: "https://plomberie-bellemare.com", email: "v.bellemare@gmail.com" },
+  { id: 2, name: "Amitee Lécuyer", rating: 4.5, specialty: "Couturier", location: "Annecy", about: "Lorem ipsum dolor sit amet...", website: "https://lecuyer-couture.com", email: "a.amitee@hotmail.com" },
+  { id: 3, name: "Leala Dennis", rating: 3.8, specialty: "Coiffeur", location: "Chambéry", about: "Lorem ipsum dolor sit amet...", website: "https://coiffure-leala-chambery.fr", email: "l.dennos@hotmail.fr" },
+  { id: 4, name: "Chocolaterie Labbé", rating: 4.9, specialty: "Chocolatier", location: "Grenoble", about: "Lorem ipsum dolor sit amet...", website: "https://chocolaterie-labbe.fr", email: "chocolaterie-labbe@gmail.com" },
+  { id: 5, name: "Claude Quinn", rating: 4.2, specialty: "Bijoutier", location: "Aix-les-bains", about: "Lorem ipsum dolor sit amet...", website: "", email: "claude.quinn@gmail.com" },
+  { id: 6, name: "Valérie Laderoute", rating: 4.5, specialty: "Toiletteur", location: "Valence", about: "Lorem ipsum dolor sit amet...", website: "", email: "v-laredoute@gmail.com" },
+  { id: 7, name: "Boutot & fils", rating: 4.7, specialty: "Menuisier", location: "Bourg-en-bresse", about: "Lorem ipsum dolor sit amet...", website: "https://boutot-menuiserie.com", email: "boutot-menuiserie@gmail.com" },
+  { id: 8, name: "CM Graphisme", rating: 4.4, specialty: "Webdesign", location: "Valence", about: "Lorem ipsum dolor sit amet...", website: "https://cm-graphisme.com", email: "contact@cm-graphisme.com" },
+  { id: 9, name: "Orville Salmons", rating: 5, specialty: "Chauffagiste", location: "Evian", about: "Lorem ipsum dolor sit amet...", website: "", email: "o-salmons@live.com" },
+  { id: 10, name: "Au pain chaud", rating: 4.8, specialty: "Boulanger", location: "Montélimar", about: "Lorem ipsum dolor sit amet...", website: "", email: "aupainchaud@hotmail.com" },
+  { id: 11, name: "Boucherie Dumont", rating: 4.5, specialty: "Boucher", location: "Lyon", about: "Lorem ipsum dolor sit amet...", website: "", email: "boucherie.dumond@gmail.com" },
+  { id: 12, name: "Mont Blanc Électricité", rating: 4.5, specialty: "Électricien", location: "Chamonix", about: "Lorem ipsum dolor sit amet...", website: "https://mont-blanc-electricite.com", email: "contact@mont-blanc-electricite.com" },
+  { id: 13, name: "Traiteur Truchon", rating: 4.1, specialty: "Traiteur", location: "Privas", about: "Lorem ipsum dolor sit amet...", website: "https://truchon-traiteur.fr", email: "contact@truchon-traiteur.fr" },
+  { id: 14, name: "Le monde des fleurs", rating: 4.6, specialty: "Fleuriste", location: "Annonay", about: "Lorem ipsum dolor sit amet...", website: "https://le-monde-des-fleurs-annonay.fr", email: "contact@le-monde-des-fleurs-annonay.fr" },
+  { id: 15, name: "Royden Charbonneau", rating: 3.8, specialty: "Carrossier", location: "Saint-Priest", about: "Lorem ipsum dolor sit amet...", website: "", email: "r.charbonneau@gmail.com" },
+  { id: 16, name: "Ernest Carignan", rating: 5, specialty: "Ferronier", location: "Le Puy-en-Velay", about: "Lorem ipsum dolor sit amet...", website: "", email: "e-carigan@hotmail.com" },
+  { id: 17, name: "C'est sup'hair", rating: 4.1, specialty: "Coiffeur", location: "Romans-sur-Isère", about: "Lorem ipsum dolor sit amet...", website: "https://sup-hair.fr", email: "sup-hair@gmail.com" },
 ];
 
 const Artisan = () => {
@@ -42,7 +56,8 @@ const Artisan = () => {
 
       {artisan.website && (
         <p>
-          <strong>Site web :</strong> <a href={artisan.website} target="_blank" rel="noopener noreferrer">{artisan.website}</a>
+          <strong>Site web :</strong>{" "}
+          <a href={artisan.website} target="_blank" rel="noopener noreferrer">{artisan.website}</a>
         </p>
       )}
 

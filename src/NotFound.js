@@ -1,5 +1,5 @@
 import React from "react";
-import "./NotFound.css"; // Assure-toi d'avoir un fichier CSS si nécessaire
+import "./NotFound.css"; 
 
 const NotFound = () => {
   return (
@@ -10,5 +10,5 @@ const NotFound = () => {
   );
 };
 
-export default NotFound; // Vérifie que l'export est bien en "default"
+export default NotFound; 
 
