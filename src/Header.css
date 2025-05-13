@@ -38,3 +38,33 @@
     width: 200px;
   }
   
+  .search-bar {
+    position: relative;
+  }
+  
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    color: #384050;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    z-index: 1000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #f1f8fc;
+  }
+  
+  

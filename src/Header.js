@@ -1,13 +1,30 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 
 const Header = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
 
-  const handleSearch = (event) => {
-    setSearchTerm(event.target.value);
-    onSearch(event.target.value);
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+    onSearch(e.target.value); 
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+
+    const slug = searchTerm
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "") 
+      .replace(/&/g, "et")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+
+    if (slug) {
+      navigate(`/fiche/${slug}`);
+    }
   };
 
   return (
@@ -21,14 +38,14 @@ const Header = ({ onSearch }) => {
         <Link to="/fabrication">Fabrication</Link>
         <Link to="/alimentation">Alimentation</Link>
       </nav>
-      <div className="search-bar">
+      <form className="search-bar" onSubmit={handleSearchSubmit}>
         <input
           type="text"
           placeholder="Rechercher un artisan..."
           value={searchTerm}
-          onChange={handleSearch}
+          onChange={handleSearchChange}
         />
-      </div>
+      </form>
     </header>
   );
 };

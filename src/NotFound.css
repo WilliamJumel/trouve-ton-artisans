@@ -1,0 +1,37 @@
+.not-found-container {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .not-found-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    font-weight: bold;
+    color: #0074c7;
+    letter-spacing: 10px;
+  }
+  
+  .digit {
+    font-size: 120px;
+    font-weight: bold;
+    color: #00497c;
+  }
+  
+  .zero {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 10px solid #cd2c2e; 
+    background-color: transparent;
+  }
+  
+  .not-found-text {
+    font-size: 1.5rem;
+    color: #384050;
+    margin-top: 20px;
+  }
+  
